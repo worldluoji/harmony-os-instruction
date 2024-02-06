@@ -126,5 +126,37 @@ multiton启动模式为多实例模式，每次调用startAbility()方法时，�
 
 <br>
 
+## 组件
+组件根据功能可以分为以下五大类：基础组件、容器组件、媒体组件、绘制组件、画布组件。
+其中基础组件是视图层的基本组成单元，包括Text、Image、TextInput、Button、LoadingProgress等。
+
+### 容器组件
+包括Row和Column, Row主轴是水平方向，Column主轴是垂直方向。
+
+主轴方向参数为：start、center、end, 交叉轴方向参数为: top、center、bottom
+
+### List组件
+List是很常用的滚动类容器组件，一般和子组件ListItem、ForEach一起使用，List列表中的每一个列表项对应一个ListItem组件.
+
+### Grid组件
+Grid组件为网格容器，是一种网格列表，由“行”和“列”分割的单元格所组成，通过指定“项目”所在的单元格做出各种各样的布局。
+Grid组件一般和子组件GridItem一起使用，Grid列表中的每一个条目对应一个GridItem组件。
+
+### Tabs
+ArkUI开发框架提供了一种页签容器组件Tabs，开发者通过Tabs组件可以很容易的实现内容视图的切换。
+页签容器Tabs的形式多种多样，不同的页面设计页签不一样，可以把页签设置在底部、顶部或者侧边。
+
+Tabs组件仅可包含子组件TabContent，每一个页签对应一个内容视图即TabContent组件。
+
+barPosition的值可以设置为BarPosition.Start（默认值）和BarPosition.End。
+- BarPosition.Start且vertical属性方法设置为false（默认值）时，页签位于容器顶部。
+- BarPosition.Start且vertical属性方法设置为true时，页签位于容器左侧。
+- BarPosition.End且vertical属性方法设置为false时，页签位于容器底部。
+- BarPosition.End且vertical属性方法设置为true时，页签位于容器右侧。
+
+<br>
+
 ## reference
 - https://developer.harmonyos.com/cn/docs/documentation/doc-guides/arkui-overview-0000001281480754
+- https://developer.harmonyos.com/cn/docs/documentation/doc-references/ts-basic-components-text-0000001333720953
+- https://developer.harmonyos.com/cn/docs/documentation/doc-references-V3/ts-container-list-0000001477981213-V3?catalogVersion=V3
