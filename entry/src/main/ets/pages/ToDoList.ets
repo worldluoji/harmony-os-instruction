@@ -1,3 +1,4 @@
+import router from '@ohos.router';
 import DataModel from '../viewmodel/DataModel';
 import CommonConstants from '../common/constant/CommonConstant';
 import ToDoItem from '../view/ToDoItem';
@@ -7,6 +8,8 @@ import ToDoItem from '../view/ToDoItem';
 @Component
 struct ToDoList {
   private totalTasks: Array<string> = [];
+  @State message: string = CommonConstants.SECOND_MESSAGE;
+  @State src: string = (router.getParams() as Record<string, string>)[CommonConstants.SECOND_SRC_PARAM];
 
   aboutToAppear() {
     this.totalTasks = DataModel.getData();
@@ -32,6 +35,29 @@ struct ToDoList {
         },
         (item: string) => JSON.stringify(item)
       )
+
+      // back
+      Row() {
+        Column() {
+          Text(this.message)
+            .fontSize(CommonConstants.FONT_SIZE)
+            .fontWeight(FontWeight.Bold)
+          Text(this.src)
+            .fontSize(CommonConstants.PARAMS_FONT_SIZE)
+            .opacity(CommonConstants.PARAMS_OPACITY)
+          Blank()
+          Button($r('app.string.back'))
+            .fontSize(CommonConstants.BUTTON_FONT_SIZE)
+            .width(CommonConstants.BUTTON_WIDTH)
+            .height(CommonConstants.BUTTON_HEIGHT)
+            .backgroundColor($r('app.color.button_bg'))
+            .onClick(() => {
+              router.back();
+            })
+        }
+        .width(CommonConstants.FULL_WIDTH)
+        .height(CommonConstants.LAYOUT_HEIGHT)
+      }
     }
     .width(CommonConstants.FULL_LENGTH)
     .height(CommonConstants.FULL_LENGTH)

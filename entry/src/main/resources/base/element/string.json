@@ -15,6 +15,14 @@
     {
       "name": "page_title",
       "value": "待办"
+    },
+    {
+      "name": "next",
+      "value": "下一页"
+    },
+    {
+      "name": "back",
+      "value": "返回"
     }
   ]
 }

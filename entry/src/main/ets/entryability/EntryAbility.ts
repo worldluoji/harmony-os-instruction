@@ -12,7 +12,7 @@ export default class EntryAbility extends UIAbility {
     // 设置WindowStage的事件订阅（获焦/失焦、可见/不可见）
 
     // loadContent接口设置应用要加载的页面
-    windowStage.loadContent('pages/ToDoList', (err, data) => {
+    windowStage.loadContent('pages/Index', (err, data) => {
       if (err.code) {
         hilog.error(0x0000, 'testTag', 'Failed to load the content. Cause: %{public}s', JSON.stringify(err) ?? '');
         return;

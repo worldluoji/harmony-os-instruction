@@ -1,5 +1,6 @@
 {
   "src": [
-    "pages/ToDoList"
+    "pages/ToDoList",
+    "pages/Index"
   ]
 }

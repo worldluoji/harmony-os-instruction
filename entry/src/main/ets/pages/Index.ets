@@ -1,3 +1,9 @@
+import router from '@ohos.router';
+import CommonConstants from '../common/constant/CommonConstant';
+import Logger from '../common/utils/Logger';
+
+const TAG = '[IndexPage]';
+
 @Entry
 @Component
 struct Index {
@@ -9,6 +15,22 @@ struct Index {
         Text(this.message)
           .fontSize(50)
           .fontWeight(FontWeight.Bold)
+        Blank()
+        Button($r('app.string.next'))
+          .fontSize(CommonConstants.BUTTON_FONT_SIZE)
+          .width(CommonConstants.BUTTON_WIDTH)
+          .height(CommonConstants.BUTTON_HEIGHT)
+          .backgroundColor($r('app.color.button_bg'))
+          .onClick(() => {
+            router.pushUrl({
+              url: CommonConstants.SECOND_URL,
+              params: {
+                src: CommonConstants.SECOND_SRC_MSG
+              }
+            }).catch((error: Error) => {
+              Logger.info(TAG, 'IndexPage push error' + JSON.stringify(error));
+            });
+          })
       }
       .width('100%')
     }
