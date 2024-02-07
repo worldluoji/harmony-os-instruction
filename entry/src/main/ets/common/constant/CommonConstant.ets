@@ -122,5 +122,40 @@ export default class CommonConstants {
    * The param opacity.
    */
   static readonly PARAMS_OPACITY: number = 0.6;
+
+  /**
+   * Date dialog start time.
+   */
+  static readonly START_TIME: string = '1900-1-1';
+
+  /**
+   * Date dialog select time.
+   */
+  static readonly SELECT_TIME: string = '1990-1-1';
+
+  /**
+   * Image back margin left of the 7.2.
+   */
+  static readonly BACK_MARGIN_LEFT: string = '7.2%';
+
+  /**
+   * Image avatar margin top of the 5.5.
+   */
+  static readonly AVATAR_MARGIN_TOP: string = '5.5%';
+
+  /**
+   * Text personal margin top of the 2.1.
+   */
+  static readonly PERSONAL_MARGIN_TOP: string = '2.1%';
+
+  /**
+   * Common dialog width of the 93.3.
+   */
+  static readonly COMMON_DIALOG_WIDTH: string = '93.3%';
+
+  /**
+   * Image back margin top of the 19.
+   */
+  static readonly BACK_MARGIN_TOP: number = 19;
 }
 
