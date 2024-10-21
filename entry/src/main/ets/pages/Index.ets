@@ -31,6 +31,21 @@ struct Index {
               Logger.info(TAG, 'IndexPage push error' + JSON.stringify(error));
             });
           })
+        Blank()
+        Button('信息')
+          .fontSize(CommonConstants.BUTTON_FONT_SIZE)
+          .width(CommonConstants.BUTTON_WIDTH)
+          .height(CommonConstants.BUTTON_HEIGHT)
+          .margin({top: 8})
+          .backgroundColor($r('app.color.button_bg'))
+          .onClick(() => {
+            router.pushUrl({
+              url: 'pages/InfoPage'
+            }).catch((error: Error) => {
+              Logger.info(TAG, 'IndexPage push error' + JSON.stringify(error));
+            });
+          })
+
       }
       .width('100%')
     }
