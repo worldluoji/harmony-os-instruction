@@ -1,0 +1,87 @@
+import { RouterUrlConstants } from "@bundle:com.huawei.music.musichome/phone@constantsCommon/index";
+import type { SongItem } from '@ohos/mediaCommon';
+const songList: SongItem[] = [
+    { id: 1, title: 'Dream It Possible', singer: 'Delacey', mark: { "id": 100663454, "type": 20000, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "phone" },
+        label: { "id": 100663489, "type": 20000, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "phone" }, src: 'Delacey - Dream It Possible.flac', index: 0,
+        lyric: 'lrcfiles/DreamItPossible.lrc' },
+    { id: 2, title: '不知道', singer: '张三-你好我好都好', mark: { "id": 100663680, "type": 20000, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "phone" },
+        label: { "id": 100663451, "type": 20000, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "phone" }, src: 'world.wav', index: 1, lyric: '' },
+    { id: 3, title: '还是歌名', singer: '不知道你是谁', mark: { "id": 100663454, "type": 20000, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "phone" },
+        label: { "id": 100663471, "type": 20000, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "phone" }, src: 'power.wav', index: 2, lyric: '' },
+    { id: 4, title: 'AIUHGVNHK', singer: 'Gwyu-Hjjiyabn', mark: { "id": 100663680, "type": 20000, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "phone" },
+        label: { "id": 100663432, "type": 20000, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "phone" }, src: 'power.wav', index: 3, lyric: '' },
+    { id: 5, title: '可可不喜欢', singer: '名佚', mark: { "id": 100663454, "type": 20000, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "phone" },
+        label: { "id": 100663424, "type": 20000, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "phone" }, src: 'world.wav', index: 4, lyric: '' },
+    { id: 6, title: '我是UOUYGBJ', singer: '我是小树', mark: { "id": 100663680, "type": 20000, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "phone" },
+        label: { "id": 100663450, "type": 20000, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "phone" }, src: 'boisterous.wav', index: 5, lyric: '' },
+    { id: 7, title: '好好学习', singer: '全村最帅', mark: { "id": 100663454, "type": 20000, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "phone" },
+        label: { "id": 100663669, "type": 20000, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "phone" }, src: 'world.wav', index: 6, lyric: '' },
+    { id: 8, title: '安心安心', singer: '小安安', mark: { "id": 100663680, "type": 20000, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "phone" },
+        label: { "id": 100663433, "type": 20000, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "phone" }, src: 'power.wav', index: 7, lyric: '' },
+    { id: 9, title: 'HBNJGHJHB', singer: '我是小树', mark: { "id": 100663454, "type": 20000, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "phone" },
+        label: { "id": 100663431, "type": 20000, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "phone" }, src: 'power.wav', index: 8, lyric: '' },
+    { id: 10, title: '天天向上', singer: '靓仔', mark: { "id": 100663680, "type": 20000, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "phone" },
+        label: { "id": 100663430, "type": 20000, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "phone" }, src: 'world.wav', index: 9, lyric: '' },
+    { id: 11, title: 'Notebook', singer: '小安安', mark: { "id": 100663454, "type": 20000, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "phone" },
+        label: { "id": 100663434, "type": 20000, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "phone" }, src: 'boisterous.wav', index: 10, lyric: '' },
+    { id: 12, title: '我是谁', singer: '小碗你好', mark: { "id": 100663680, "type": 20000, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "phone" },
+        label: { "id": 100663429, "type": 20000, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "phone" }, src: 'world.wav', index: 11, lyric: '' },
+    { id: 13, title: '你好吗', singer: '张三-你好我好都好', mark: { "id": 100663454, "type": 20000, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "phone" },
+        label: { "id": 100663468, "type": 20000, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "phone" }, src: 'power.wav', index: 12, lyric: '' },
+    { id: 14, title: '你在哪', singer: '不知道你是谁', mark: { "id": 100663680, "type": 20000, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "phone" },
+        label: { "id": 100663473, "type": 20000, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "phone" }, src: 'power.wav', index: 13, lyric: '' },
+    { id: 15, title: 'lovely', singer: 'Gwyu-Hjjiyabn', mark: { "id": 100663454, "type": 20000, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "phone" },
+        label: { "id": 100663475, "type": 20000, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "phone" }, src: 'world.wav', index: 14, lyric: '' },
+    { id: 16, title: '谢谢你', singer: '名佚', mark: { "id": 100663680, "type": 20000, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "phone" },
+        label: { "id": 100663471, "type": 20000, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "phone" }, src: 'boisterous.wav', index: 15, lyric: '' },
+    { id: 17, title: '我是靓仔', singer: '我是小树', mark: { "id": 100663454, "type": 20000, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "phone" },
+        label: { "id": 100663669, "type": 20000, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "phone" }, src: 'world.wav', index: 16, lyric: '' },
+    { id: 18, title: '听我说', singer: '全村最帅', mark: { "id": 100663680, "type": 20000, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "phone" },
+        label: { "id": 100663449, "type": 20000, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "phone" }, src: 'power.wav', index: 17, lyric: '' },
+    { id: 19, title: '没什么大不了', singer: '小安安', mark: { "id": 100663454, "type": 20000, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "phone" },
+        label: { "id": 100663451, "type": 20000, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "phone" }, src: 'power.wav', index: 18, lyric: '' },
+    { id: 20, title: '其实也一样', singer: '我是小树', mark: { "id": 100663680, "type": 20000, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "phone" },
+        label: { "id": 100663468, "type": 20000, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "phone" }, src: 'world.wav', index: 19, lyric: '' },
+    { id: 21, title: '想明白', singer: '小安安', mark: { "id": 100663454, "type": 20000, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "phone" },
+        label: { "id": 100663432, "type": 20000, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "phone" }, src: 'boisterous.wav', index: 20, lyric: '' },
+    { id: 22, title: '你懂的', singer: '小安安', mark: { "id": 100663680, "type": 20000, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "phone" },
+        label: { "id": 100663424, "type": 20000, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "phone" }, src: 'world.wav', index: 21, lyric: '' },
+    { id: 23, title: '谁了解', singer: '小安安', mark: { "id": 100663454, "type": 20000, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "phone" },
+        label: { "id": 100663450, "type": 20000, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "phone" }, src: 'power.wav', index: 22, lyric: '' },
+    { id: 24, title: '白天', singer: '小安安', mark: { "id": 100663680, "type": 20000, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "phone" },
+        label: { "id": 100663669, "type": 20000, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "phone" }, src: 'power.wav', index: 23, lyric: '' },
+    { id: 25, title: '黑夜', singer: 'Gwyu-Hjjiyabn', mark: { "id": 100663454, "type": 20000, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "phone" },
+        label: { "id": 100663475, "type": 20000, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "phone" }, src: 'world.wav', index: 24, lyric: '' },
+    { id: 26, title: '春夏秋冬', singer: '名佚', mark: { "id": 100663680, "type": 20000, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "phone" },
+        label: { "id": 100663471, "type": 20000, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "phone" }, src: 'boisterous.wav', index: 25, lyric: '' },
+    { id: 27, title: '一年四季', singer: '我是小树', mark: { "id": 100663454, "type": 20000, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "phone" },
+        label: { "id": 100663669, "type": 20000, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "phone" }, src: 'world.wav', index: 26, lyric: '' },
+    { id: 28, title: '朝雪', singer: '全村最帅', mark: { "id": 100663680, "type": 20000, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "phone" },
+        label: { "id": 100663429, "type": 20000, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "phone" }, src: 'power.wav', index: 27, lyric: '' },
+    { id: 29, title: '暮色', singer: '小安安', mark: { "id": 100663454, "type": 20000, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "phone" },
+        label: { "id": 100663468, "type": 20000, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "phone" }, src: 'power.wav', index: 28, lyric: '' },
+    { id: 30, title: '天下', singer: '我是小树', mark: { "id": 100663680, "type": 20000, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "phone" },
+        label: { "id": 100663473, "type": 20000, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "phone" }, src: 'world.wav', index: 29, lyric: '' },
+    { id: 31, title: '勇敢', singer: '小安安', mark: { "id": 100663454, "type": 20000, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "phone" },
+        label: { "id": 100663475, "type": 20000, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "phone" }, src: 'boisterous.wav', index: 30, lyric: '' },
+    { id: 32, title: '安明', singer: '小安安', mark: { "id": 100663680, "type": 20000, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "phone" },
+        label: { "id": 100663471, "type": 20000, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "phone" }, src: 'world.wav', index: 31, lyric: '' },
+    { id: 33, title: '心安', singer: '小安安', mark: { "id": 100663454, "type": 20000, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "phone" },
+        label: { "id": 100663669, "type": 20000, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "phone" }, src: 'power.wav', index: 32, lyric: '' },
+    { id: 34, title: '无归', singer: '小安安', mark: { "id": 100663680, "type": 20000, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "phone" },
+        label: { "id": 100663434, "type": 20000, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "phone" }, src: 'power.wav', index: 33, lyric: '' }
+];
+const optionList: OptionItem[] = [
+    { image: { "id": 100663685, "type": 20000, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "phone" }, text: { "id": 100663457, "type": 10003, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "phone" } },
+    { image: { "id": 100663684, "type": 20000, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "phone" }, text: { "id": 100663460, "type": 10003, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "phone" } },
+    { image: { "id": 100663490, "type": 20000, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "phone" }, text: { "id": 100663459, "type": 10003, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "phone" }, action: (pageIndexInfos: NavPathStack) => {
+            pageIndexInfos.pushPathByName(RouterUrlConstants.MUSIC_COMMENT, null);
+        } },
+    { image: { "id": 100663477, "type": 20000, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "phone" }, text: { "id": 100663465, "type": 10003, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "phone" } }
+];
+class OptionItem {
+    image: Resource = { "id": 100663685, "type": 20000, params: [], "bundleName": "com.huawei.music.musichome", "moduleName": "phone" };
+    text?: Resource;
+    action?: (pageIndexInfos: NavPathStack) => void;
+}
+export { optionList, OptionItem, songList };

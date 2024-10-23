@@ -1,0 +1,27 @@
+{
+  "modulePathMap": {
+    "phone": "/Users/luke-surface-mac/Downloads/MusicHome-master/products/phone",
+    "musicList": "/Users/luke-surface-mac/Downloads/MusicHome-master/features/musicList",
+    "musicComment": "/Users/luke-surface-mac/Downloads/MusicHome-master/features/musicComment",
+    "live": "/Users/luke-surface-mac/Downloads/MusicHome-master/features/live",
+    "mediaCommon": "/Users/luke-surface-mac/Downloads/MusicHome-master/common/mediaCommon",
+    "constantsCommon": "/Users/luke-surface-mac/Downloads/MusicHome-master/common/constantsCommon"
+  },
+  "compileMode": "esmodule",
+  "projectRootPath": "/Users/luke-surface-mac/Downloads/MusicHome-master",
+  "nodeModulesPath": "/Users/luke-surface-mac/Downloads/MusicHome-master/products/phone/.preview/default/intermediates/loader_out/default/node_modules",
+  "byteCodeHarInfo": {},
+  "declarationEntry": [],
+  "moduleName": "phone",
+  "hspNameOhmMap": {},
+  "harNameOhmMap": {},
+  "packageManagerType": "ohpm",
+  "compileEntry": [],
+  "otherCompileFiles": [],
+  "dynamicImportLibInfo": {},
+  "routerMap": [],
+  "hspResourcesMap": {},
+  "anBuildOutPut": "/Users/luke-surface-mac/Downloads/MusicHome-master/products/phone/.preview/default/intermediates/loader_out/default/an/arm64-v8a",
+  "anBuildMode": "type",
+  "buildConfigPath": ".preview/config/buildConfig.json"
+}
