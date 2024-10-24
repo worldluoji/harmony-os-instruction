@@ -23,6 +23,11 @@ export default class MyAbilityStage extends AbilityStage {
     Logger.info(TAG, 'MyAbilityStage onCreate');
   }
 
+  /*
+   * 业务逻辑会根据参数返回一个字符串Key，用于标识当前UIAbility实例。
+   * 如果返回的Key已经对应一个已启动的UIAbility实例，系统会将该UIAbility实例拉回前台并获焦，而不会创建新的实例。
+   * 如果返回的Key没有对应已启动的UIAbility实例，则系统会创建新的UIAbility实例并启动。
+   * */
   onAcceptWant(want: Want) {
     Logger.info(TAG, 'MyAbilityStage onAcceptWant start');
     if (want && want.abilityName === 'SpecifiedAbility') {
