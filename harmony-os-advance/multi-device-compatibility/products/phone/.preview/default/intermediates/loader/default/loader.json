@@ -1,0 +1,27 @@
+{
+  "modulePathMap": {
+    "phone": "/Users/luojiayi/code/harmony-os-instruction/harmony-os-advance/multi-device-compatibility/products/phone",
+    "musicList": "/Users/luojiayi/code/harmony-os-instruction/harmony-os-advance/multi-device-compatibility/features/musicList",
+    "musicComment": "/Users/luojiayi/code/harmony-os-instruction/harmony-os-advance/multi-device-compatibility/features/musicComment",
+    "live": "/Users/luojiayi/code/harmony-os-instruction/harmony-os-advance/multi-device-compatibility/features/live",
+    "mediaCommon": "/Users/luojiayi/code/harmony-os-instruction/harmony-os-advance/multi-device-compatibility/common/mediaCommon",
+    "constantsCommon": "/Users/luojiayi/code/harmony-os-instruction/harmony-os-advance/multi-device-compatibility/common/constantsCommon"
+  },
+  "compileMode": "esmodule",
+  "projectRootPath": "/Users/luojiayi/code/harmony-os-instruction/harmony-os-advance/multi-device-compatibility",
+  "nodeModulesPath": "/Users/luojiayi/code/harmony-os-instruction/harmony-os-advance/multi-device-compatibility/products/phone/.preview/default/intermediates/loader_out/default/node_modules",
+  "byteCodeHarInfo": {},
+  "declarationEntry": [],
+  "moduleName": "phone",
+  "hspNameOhmMap": {},
+  "harNameOhmMap": {},
+  "packageManagerType": "ohpm",
+  "compileEntry": [],
+  "otherCompileFiles": [],
+  "dynamicImportLibInfo": {},
+  "routerMap": [],
+  "hspResourcesMap": {},
+  "anBuildOutPut": "/Users/luojiayi/code/harmony-os-instruction/harmony-os-advance/multi-device-compatibility/products/phone/.preview/default/intermediates/loader_out/default/an/arm64-v8a",
+  "anBuildMode": "type",
+  "buildConfigPath": ".preview/config/buildConfig.json"
+}
