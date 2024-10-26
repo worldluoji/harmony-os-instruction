@@ -1,17 +1,3 @@
-/*
- * Copyright (c) 2024 Huawei Device Co., Ltd.
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *     http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
 
 import { UIAbility,AbilityConstant,Want,Context } from '@kit.AbilityKit';
 import { window } from '@kit.ArkUI';
@@ -24,11 +10,17 @@ interface Data {
   launchWant: Want;
 }
 
+/* 执行顺序打印：
+ * [Sample_StartMode], MainAbility onCreate
+ * [Sample_StartMode], MainAbility onWindowStageCreate
+ * [Sample_StartMode], MainAbility onForeground
+ * */
 export default class MainAbility extends UIAbility {
   getAbilityDataCallback: Function | undefined = undefined;
 
   onCreate(want: Want, launchParam: AbilityConstant.LaunchParam): void {
     Logger.info(TAG, 'MainAbility onCreate');
+    // eventHub是鸿蒙系统提供的一个事件处理机制，允许不同组件之间进行通信。这里注册了一个事件监听器，监听名为"getAbilityData"的事件。
     this.context.eventHub.on("getAbilityData", this.getAbilityDataCallback = (data: Data): void => {
       Logger.info(TAG, 'MainAbility' + JSON.stringify(data));
       data.context = this.context;

@@ -2,7 +2,7 @@
 
 ### 介绍
 
-本示例展示了在一个Stage模型中，实现multiton、singleton、specified多种模式场景。
+本示例展示了在一个Stage模型中，实现 multiton、singleton、specified多种模式场景。
 
 本实例参考开发指南。
 本实例需要使用aa工具(hdc shell执行后，执行aa dump -a命令即可)查看应用Ability模式信息。
@@ -76,20 +76,8 @@
   * 启动指定Ability：通过Util中的startMode函数根据页面所传的abilityName，启动对应的ability并进入详情页面。
   * specified多实例功能实现：specified模式则是根据MyAbilityStage中的onAcceptWant函数给用户返回一个ability标识，如果之前启动过标识的ability，不创建新的实例并拉回栈顶，否则创建新的实例并启动。
 
-### 相关权限
 
-不涉及。
-
-### 依赖
-
-不涉及。
-
-### 约束与限制
-
-1.本示例仅支持标准系统上运行，支持设备：华为手机。
-
-2.HarmonyOS系统：HarmonyOS NEXT Developer Beta1及以上。
-
-3.DevEco Studio版本：DevEco Studio NEXT Developer Beta1及以上。
-
-4.HarmonyOS SDK版本：HarmonyOS NEXT Developer Beta1 SDK及以上。
+## 代码流程说明
+- 启动时：MyAbilityStage -> MainAbility -> Home.ets
+- 进入Home首页手，点击番茄等不同的图案，会创建不同类型的UIAbility。 实际实现是 Home.ets -> FoodListItem.ets -> startMode
+- startMode调用 startAbility(want)方法启动一个 UIAbility, want起到了传递参数的作用
