@@ -2,6 +2,7 @@
   "src": [
     "pages/ToDoList",
     "pages/Index",
-    "pages/InfoPage"
+    "pages/InfoPage",
+    "pages/CollectionPage"
   ]
 }

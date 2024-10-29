@@ -1,11 +1,25 @@
 {
   "app": {
-    "signingConfigs": [],
+    "signingConfigs": [
+      {
+        "name": "default",
+        "type": "HarmonyOS",
+        "material": {
+          "certpath": "/Users/luke-surface-mac/.ohos/config/default_harmony-os-basic_YqzRA89k6GAP0SXSg9QXkbp_IEr5WQj8JAxKMEL32zw=.cer",
+          "storePassword": "00000019772E4A5457A69F75AE4A6F865E82C769914EAE9E075CC7FA19FF3468A09BE247D08A55F475",
+          "keyAlias": "debugKey",
+          "keyPassword": "00000019306B4DF426914299B0D70ED64A9E71CB39436FC7FE60DF139BD0E1232E9B0C5366C27924DD",
+          "profile": "/Users/luke-surface-mac/.ohos/config/default_harmony-os-basic_YqzRA89k6GAP0SXSg9QXkbp_IEr5WQj8JAxKMEL32zw=.p7b",
+          "signAlg": "SHA256withECDSA",
+          "storeFile": "/Users/luke-surface-mac/.ohos/config/default_harmony-os-basic_YqzRA89k6GAP0SXSg9QXkbp_IEr5WQj8JAxKMEL32zw=.p12"
+        }
+      }
+    ],
     "products": [
       {
         "name": "default",
         "signingConfig": "default",
-        "compatibleSdkVersion": "4.0.0(10)",
+        "compatibleSdkVersion": "5.0.0(12)",
         "runtimeOS": "HarmonyOS"
       }
     ]

@@ -8,7 +8,7 @@ import Logger from '../common/utils/Logger';
 
 @Entry
 @Component
-struct HomePage {
+struct InfoPage {
   @State birthdate: string = '';
   @State sex: string = '';
   @State hobbies: string = '';
