@@ -26,7 +26,7 @@
 
 ### 简介
 
-本篇Codelab基于应用接续、分布式数据对象、分布式文件系统等功能，实现分布式邮件应用。主要包含以下功能：
+本示例基于应用接续、分布式数据对象、分布式文件系统等功能，实现分布式邮件应用。主要包含以下功能：
 
 1. 通过分布式数据对象跨设备传输数据。
 2. 通过点击系统Dock栏，使应用接续并进行数据传输。
@@ -35,9 +35,6 @@
 ![ShoppingApps](screenshots/device/DistributedMail.gif)
 
 ### 相关权限
-
-本篇Codelab用到分布式的能力，需要在配置文件module.json5里添加不同设备间的数据交换权限：ohos.permission.DISTRIBUTED_DATASYNC。
-
 在实现迁移接口前，需要在entry > src > main > module.json5中配置continuable标签：true
 表示支持迁移，false表示不支持，默认为false。配置为false，将被系统识别为无法迁移。
 
